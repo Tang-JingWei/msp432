@@ -1,0 +1,24 @@
+#ifndef __BSP_ADC14_H__
+#define __BSP_ADC14_H__
+
+
+#include "sysinit.h"
+
+
+#define ADC_TRIGGER_TA0_C1 ADC_TRIGGER_SOURCE1
+#define ADC_TRIGGER_TA0_C2 ADC_TRIGGER_SOURCE2
+#define ADC_TRIGGER_TA1_C1 ADC_TRIGGER_SOURCE3
+#define ADC_TRIGGER_TA1_C2 ADC_TRIGGER_SOURCE4
+#define ADC_TRIGGER_TA2_C1 ADC_TRIGGER_SOURCE5
+#define ADC_TRIGGER_TA2_C2 ADC_TRIGGER_SOURCE6
+#define ADC_TRIGGER_TA3_C1 ADC_TRIGGER_SOURCE7
+
+
+void ADC_Config(void);
+void ADC_TimerTrigger_Config(void);
+
+#endif
+
+
+
+

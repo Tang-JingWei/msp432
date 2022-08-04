@@ -1,0 +1,131 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ewq Lenovo, 2, LIC=32B1Q-N4H82-ARZXW-QYBEW-LJ2CW-Z2623
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.15.0
+Toolchain Path:  E:\KEIL_5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      CMSIS_AGDI.dll V1.21.12.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+f:\ti\simplelink_msp432p4_sdk_3_40_01_02\examples\nortos\MSP_EXP432P401R\driverlib\my_msp_demo\keil\empty.uvprojx
+Project File Date:  07/24/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'E:\KEIL_5\ARM\ARMCC\Bin'
+Build target 'empty'
+compiling main.c...
+compiling startup_msp432p401r_uvision.s...
+compiling interrupt.c...
+compiling sysinit.c...
+compiling delay.c...
+compiling baudrate_calculate.c...
+compiling bsp_math.c...
+compiling led.c...
+compiling key.c...
+compiling bsp_systick.c...
+compiling tim_A0.c...
+compiling tim_A1.c...
+compiling tim_A2.c...
+Hardware\TIM\tim_A2.c(122): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                  sr04_distance = (float)temp * 17.0 / 1000.0;
+Hardware\TIM\tim_A2.c: 1 warning, 0 errors
+compiling tim_A3.c...
+compiling tim32_0.c...
+Hardware\TIM\tim32_0.c(72): warning:  #188-D: enumerated type mixed with another type
+        Motors_Control(Now_Left_Dir, Now_Left_Pwm, Now_Right_Dir, Now_Right_Pwm);
+Hardware\TIM\tim32_0.c(72): warning:  #188-D: enumerated type mixed with another type
+        Motors_Control(Now_Left_Dir, Now_Left_Pwm, Now_Right_Dir, Now_Right_Pwm);
+Hardware\TIM\tim32_0.c: 2 warnings, 0 errors
+compiling tim32_1.c...
+compiling oled.c...
+compiling uart_0.c...
+compiling uart_1.c...
+Hardware\UART\uart_1.c(165): warning:  #177-D: variable "i" was declared but never referenced
+    uint16_t i, j;
+Hardware\UART\uart_1.c(165): warning:  #177-D: variable "j" was declared but never referenced
+    uint16_t i, j;
+Hardware\UART\uart_1.c: 2 warnings, 0 errors
+compiling uart_2.c...
+Hardware\UART\uart_2.c(143): warning:  #177-D: variable "i" was declared but never referenced
+    uint16_t i, j;
+Hardware\UART\uart_2.c(143): warning:  #177-D: variable "j" was declared but never referenced
+    uint16_t i, j;
+Hardware\UART\uart_2.c: 2 warnings, 0 errors
+compiling uart_3.c...
+compiling bsp_uart.c...
+compiling bsp_adc14.c...
+Hardware\ADC14\bsp_adc14.c(184): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      printf("[%.2f] \r\n", (float)
+AP_ADC14_getResult(
+DC_MEM0) * 3.3 / 16384.0);
+Hardware\ADC14\bsp_adc14.c: 1 warning, 0 errors
+compiling sr04.c...
+Hardware\SR04\sr04.c(88): warning:  #940-D: missing return statement at end of non-void function "UltrasonicWave_Measure"
+  }
+Hardware\SR04\sr04.c(51): warning:  #177-D: variable "time_node1" was declared but never referenced
+        uint16_t time_node1 = 0;
+Hardware\SR04\sr04.c(52): warning:  #177-D: variable "time_node2" was declared but never referenced
+        uint16_t time_node2 = 0;
+Hardware\SR04\sr04.c(53): warning:  #177-D: variable "measure" was declared but never referenced
+        uint16_t measure = 0;
+Hardware\SR04\sr04.c(12): warning:  #177-D: variable "distance_temp" was declared but never referenced
+  static float distance_temp = 0;
+Hardware\SR04\sr04.c(13): warning:  #177-D: variable "distance_last" was declared but never referenced
+  static float distance_last = 0;
+Hardware\SR04\sr04.c: 6 warnings, 0 errors
+compiling motor.c...
+Hardware\MOTOR\motor.c(135): warning:  #177-D: variable "Target_Maichong" was declared but never referenced
+    int32_t Target_Maichong = 0;
+Hardware\MOTOR\motor.c: 1 warning, 0 errors
+compiling pid.c...
+compiling mpu6050.c...
+compiling myiic.c...
+compiling servo.c...
+Hardware\SERVO\servo.c(24): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        pwm = (-1) * angle * 11.11 + 500; /* ?Ç¶È»??ã³?pwm */
+Hardware\SERVO\servo.c(28): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        pwm = angle * 11.11 + 500; /* ?Ç¶È»??ã³?pwm */
+Hardware\SERVO\servo.c(38): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        pwm = (-1) * angle * 11.11 + 500; /* ?Ç¶È»??ã³?pwm */
+Hardware\SERVO\servo.c(42): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        pwm = angle * 11.11 + 500; /* ?Ç¶È»??ã³?pwm */
+Hardware\SERVO\servo.c: 4 warnings, 0 errors
+compiling graysensor.c...
+linking...
+Program Size: Code=27676 RO-data=1644 RW-data=292 ZI-data=3940  
+After Build - User command #1: fromelf --bin --output .\Build\empty.bin .\Build\empty.axf
+".\Build\empty.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::CMSIS:CORE:4.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.1.0
+
+<h2>Collection of Component include folders:</h2>
+  f:\ti\simplelink_msp432p4_sdk_3_40_01_02\examples\nortos\MSP_EXP432P401R\driverlib\my_msp_demo\keil\RTE
+  E:\KEIL_5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  E:\KEIL_5\ARM\PACK\TexasInstruments\MSP432P4xx_DFP\3.2.6\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+</pre>
+</body>
+</html>

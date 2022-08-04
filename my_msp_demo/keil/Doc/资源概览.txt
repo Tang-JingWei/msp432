@@ -1,0 +1,31 @@
+/*********************外设占用资源总览*********************
+
+---MSP432
+  -LED  
+  -KEY
+  -TimerA
+   -A0
+  -OLED
+    -P5.0 P5.1 P5.2 P5.3 
+  -UART
+    -
+  -ADC
+  -SR04
+    -           TimerA2_1 
+  -MORTOR
+    -PWMA       TimerA0_2 P2.5
+    -PWMB       TImerA0_1 P2.4
+    -EncoderA   P1.6 P1.7 (外部中断)
+    -EncoderB   P2.6 P2.7 (外部中断)
+  -MPU6050
+    -SCL        P6.5
+    -SDA        P6.4
+  -SERVO
+    -Up_servo   TimerA1_2 P7.6
+    -Down_servo TimerA1_1 P7.7
+  -GRAYSENSOR
+    -
+
+
+
+*****************************************************/
